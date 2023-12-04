@@ -4,7 +4,7 @@ const prev = document.querySelector('.previous');
 
 
 // Set the date we're counting down to
-const countDownDate = new Date("Nov 31, 2023 00:50:00").getTime();
+const countDownDate = new Date("Dec 31, 2023 00:00:00").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
@@ -51,3 +51,6 @@ prev.addEventListener('click', () =>{
 next.addEventListener('click', () => {
   gotoNext();
 });
+    setInterval(() =>{
+         gotoNext();
+},3000);
